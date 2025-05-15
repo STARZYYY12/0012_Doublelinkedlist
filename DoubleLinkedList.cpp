@@ -164,4 +164,13 @@ class DoubleLinkedList
             return;
         }
 
+        //step 1 move to the last node
+        Node *currentNode = START;
+        int i = 0;
+        while (currentNode->next != NULL)
+        {
+            currentNode = currentNode->prev;
+            i--;
+            
+        }
         

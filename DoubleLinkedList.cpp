@@ -76,4 +76,6 @@ class DoubleLinkedList
 
             //step 9
             newNode->next = current->next; //part A
-            
+            newNode->prev = current; //part B
+
+          

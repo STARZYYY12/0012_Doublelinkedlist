@@ -81,4 +81,6 @@ class DoubleLinkedList
             //insert last node
             if (current->next != NULL)
                 current->next->prev = newNode; //part C
-          
+            
+            current->next = newNode; //part D
+        }

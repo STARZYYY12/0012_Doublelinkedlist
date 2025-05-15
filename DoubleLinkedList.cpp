@@ -179,4 +179,12 @@ class DoubleLinkedList
         {
             cout << i + i << ". " << currentNode->noMhs << " " << endl;
 
-           
+            //step 3
+            currentNode = currentNode->prev;
+            i--;
+
+        }
+
+
+    }
+

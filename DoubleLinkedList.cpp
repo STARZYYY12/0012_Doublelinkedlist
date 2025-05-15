@@ -108,4 +108,47 @@ class DoubleLinkedList
                 return;
             }
 
+            //step 2 if node is at the beginning\
+
+            if (current == START)
             
+        {
+                 START = current->next;
+                 if (START != NULL)
+                 START->prev = NULL;
+
+        }
+        else
+        {
+            //step3 link previous node
+            current->prev->next = current->next;
+
+            //step 4 of cirrent os not the last node
+            if (current->next != NULL)
+                current->next->prev = current->prev;
+
+        }
+
+            //step5 delete the node
+            delete current;
+            cout << "Record with roll number " << rollNo << " deleted" << endl;
+
+        }
+    void traverse ()
+    {
+        if (START == NULL)
+        {
+            cout << "nList is empty" << endl;
+            return;
+        }
+
+        //step 1 mark first node a currentNode
+        Node *currentNode = START;
+        //step2 repeat until currentNode = NULL
+        cout << "\nRecord is ascending order of roll number are:\n";
+        int i = 0;
+        while (currentNode != NULL)
+        {
+           cout << i + i << ". " << currentNode->noMhs << " " << endl;
+
+       

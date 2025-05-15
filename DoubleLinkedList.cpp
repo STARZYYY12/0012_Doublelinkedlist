@@ -156,4 +156,12 @@ class DoubleLinkedList
         i++;
         }
     } 
-   
+    void revtravarse()
+    {
+        if (START = NULL)
+        {
+            cout << "\nList is empty" << endl;
+            return;
+        }
+
+        

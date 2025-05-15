@@ -73,3 +73,7 @@ class DoubleLinkedList
                 return;
 
             }
+
+            //step 9
+            newNode->next = current->next; //part A
+            

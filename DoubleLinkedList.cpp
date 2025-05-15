@@ -203,4 +203,9 @@ class DoubleLinkedList
 
         Node *current = START;
 
+        //step 1 traverse to find
+
+        while (current != NULL && current->noMhs != rollNo)
+            current = current->next;
+
        
